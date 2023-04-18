@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Realtime Drawing</title>
+        <title>Google Lens Vs Mobilenet</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,21 +13,190 @@
         <ol>
             <div class="test_image_and_result col-xs-12">
                 <li>
-                    <b>Test Image:</b>
+                    <b>Test Image: Water Bottle</b>
                     <img src="WIN_20230418_13_06_37_Pro.jpg" class="img-responsive" style="width:50%" style="height:50%">
                 </li>
                 <h5 class="col-sm-4 col-xs-12">
-                    Output: Google Lens:<span></span>
+                    Output: Google Lens: Stainless Steel Water Bottle<span></span>
                 </h5>
                 <h5 class="col-sm-4 col-xs-12">
-                    Output: Mobilenet:<span></span>
+                    Output: Mobilenet: Water Bottle<span></span>
                 </h5>
                 <div class="mini_result col-xs-12">
-                    <h4>Result: </h4>
+                    <h4>Result: Both</h4>
                     <hr>
-                    <h4></h4>
+                    <h4 id="res1"></h4>
+                </div>
+            </div>
+            <div class="test_image_and_result col-xs-12">
+                <li>
+                    <b>Test Image:Razor Knife</b>
+                    <img src="WIN_20230418_13_14_22_Pro.jpg" class="img-responsive" style="width:50%" style="height:50%">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Google Lens: Vintage Knife<span></span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Mobilenet: Knife<span></span>
+                </h5>
+                <div class="mini_result col-xs-12">
+                    <h4>Result: Both</h4>
+                    <hr>
+                    <h4 id="res2"></h4>
+                </div>
+            </div>
+            <div class="test_image_and_result col-xs-12">
+                <li>
+                    <b>Test Image: Magnifying Lens</b>
+                    <img src="WIN_20230418_17_51_07_Pro.jpg" class="img-responsive" style="width:50%" style="height:50%">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Google Lens: Magnifier Glass<span></span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Mobilenet: Magnifying Glass<span></span>
+                </h5>
+                <div class="mini_result col-xs-12">
+                    <h4>Result: Both</h4>
+                    <hr>
+                    <h4 id="res3"></h4>
+                </div>
+            </div>
+            <div class="test_image_and_result col-xs-12">
+                <li>
+                    <b>Test Image: Microscope</b>
+                    <img src="WIN_20230418_17_51_21_Pro.jpg" class="img-responsive" style="width:50%" style="height:50%">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Google Lens: Celestron Microscope<span></span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Mobilenet: Microscope<span></span>
+                </h5>
+                <div class="mini_result col-xs-12">
+                    <h4>Result: Both</h4>
+                    <hr>
+                    <h4 id="res4"></h4>
+                </div>
+            </div>
+            <div class="test_image_and_result col-xs-12">
+                <li>
+                    <b>Test Image: Pen</b>
+                    <img src="WIN_20230418_17_51_30_Pro.jpg" class="img-responsive" style="width:50%" style="height:50%">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Google Lens: Ballpoint Writing Pen<span></span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Mobilenet: Pen<span></span>
+                </h5>
+                <div class="mini_result col-xs-12">
+                    <h4>Result: Both</h4>
+                    <hr>
+                    <h4 id="res5"></h4>
+                </div>
+            </div>
+            <div class="test_image_and_result col-xs-12">
+                <li>
+                    <b>Test Image: Phone</b>
+                    <img src="WIN_20230418_18_50_57_Pro.jpg" class="img-responsive" style="width:50%" style="height:50%">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Google Lens: Android Phone<span></span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Mobilenet: Box<span></span>
+                </h5>
+                <div class="mini_result col-xs-12">
+                    <h4>Result: Google Lens</h4>
+                    <hr>
+                    <h4 id="res6"></h4>
+                </div>
+            </div>
+            <div class="test_image_and_result col-xs-12">
+                <li>
+                    <b>Test Image: Calculator</b>
+                    <img src="WIN_20230418_18_51_41_Pro.jpg" class="img-responsive" style="width:50%" style="height:50%">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Google Lens: Graphing Calculator<span></span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Mobilenet: Calculator<span></span>
+                </h5>
+                <div class="mini_result col-xs-12">
+                    <h4>Result: Both</h4>
+                    <hr>
+                    <h4 id="res7"></h4>
+                </div>
+            </div>
+            <div class="test_image_and_result col-xs-12">
+                <li>
+                    <b>Test Image: Headphones</b>
+                    <img src="WIN_20230418_18_52_16_Pro.jpg" class="img-responsive" style="width:50%" style="height:50%">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Google Lens: Bose Headphones<span></span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Mobilenet: Headphones<span></span>
+                </h5>
+                <div class="mini_result col-xs-12">
+                    <h4>Result: Both</h4>
+                    <hr>
+                    <h4 id="res8"></h4>
+                </div>
+            </div>
+            <div class="test_image_and_result col-xs-12">
+                <li>
+                    <b>Test Image: Glasses</b>
+                    <img src="WIN_20230418_18_52_35_Pro.jpg" class="img-responsive" style="width:50%" style="height:50%">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Google Lens: Reading Glasses<span></span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Mobilenet: Glasses<span></span>
+                </h5>
+                <div class="mini_result col-xs-12">
+                    <h4>Result: Both</h4>
+                    <hr>
+                    <h4 id="res9"></h4>
+                </div>
+            </div>
+            <div class="test_image_and_result col-xs-12">
+                <li>
+                    <b>Test Image: Battery</b>
+                    <img src="WIN_20230418_18_52_50_Pro.jpg" class="img-responsive" style="width:50%" style="height:50%">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Google Lens: Rechargable Battery<span></span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output: Mobilenet: Battery<span></span>
+                </h5>
+                <div class="mini_result col-xs-12">
+                    <h4>Result: Both</h4>
+                    <hr>
+                    <h4 id="res0"></h4>
                 </div>
             </div>
         </ol>
+        <center class="btn btn-primary" style="width:100%" style="padding:50px">
+            <h1>RESULT OF CASE STUDY</h1>
+            <span>Match 1: Both, </span>
+            <span>Match 2: Both, </span>
+            <span>Match 3: Both, </span>
+            <span>Match 4: Both, </span>
+            <span>Match 5: Both, </span>
+            <span>Match 6: Google Lens, </span>
+            <span>Match 7: Both, </span>
+            <span>Match 8: Both, </span>
+            <span>Match 9: Both, </span>
+            <span>Match 10: Both, </span>
+            <h2>The Mobilenet was given 10 pictures and got 9 of them correct.</h2>
+            <h2>The Google Lens got the same 10 pictures and got all of them correct.</h2>
+            <h1>This proves that Google Lens is more accurate.</h1>
+        </center>
     </body>
 </html>
